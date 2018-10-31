@@ -42,13 +42,13 @@ cd "${KUBEFLOW_KS_DIR}"
 ks registry add kubeflow "${KUBEFLOW_REPO}/kubeflow"
 
 # Install packages
-ks pkg install kubeflow/core@${VERSION}
-ks pkg install kubeflow/pytorch-job@${VERSION}
-ks pkg install kubeflow/seldon@${VERSION}
-ks pkg install kubeflow/tensorboard@${VERSION}
-ks pkg install kubeflow/tf-serving@${VERSION}
-ks pkg install kubeflow/tf-job@${VERSION}
-ks pkg install kubeflow/jupyterhub@${VERSION}
+ks pkg install kubeflow/core
+ks pkg install kubeflow/pytorch-job
+ks pkg install kubeflow/seldon
+ks pkg install kubeflow/tensorboard
+ks pkg install kubeflow/tf-serving
+ks pkg install kubeflow/tf-job
+ks pkg install kubeflow/jupyterhub
 
 ks registry add kubeflow https://github.com/h2oai/h2o-kubeflow/tree/master/h2o-kubeflow
 ks pkg install h2o-kubeflow/h2o3-static
