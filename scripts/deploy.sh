@@ -60,5 +60,5 @@ ks generate kubeflow-core kubeflow-core
 
 # Apply the components generated
 if ${KUBEFLOW_DEPLOY}; then
-  ks apply default
+  ks apply ${KUBEFLOW_SPACENAME}
 fi
