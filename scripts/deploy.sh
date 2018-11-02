@@ -8,6 +8,7 @@ set -xe
 KUBEFLOW_REPO=${KUBEFLOW_REPO:-"`pwd`/kubeflow_repo"}
 KUBEFLOW_VERSION=${KUBEFLOW_VERSION:-"v0.2-branch"}
 KUBEFLOW_DEPLOY=${KUBEFLOW_DEPLOY:-true}
+KUBEFLOW_SPACENAME=${KUBEFLOW_SPACENAME:-default}
 
 if [[ ! -d "${KUBEFLOW_REPO}" ]]; then
   if [ "${KUBEFLOW_VERSION}" == "v0.2-branch" ]; then
